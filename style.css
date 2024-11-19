@@ -1,0 +1,571 @@
+@font-face {
+  font-family: reg;
+  src: url(./Inter-Regular.woff2);
+}
+@font-face {
+  font-family: med;
+  src: url(./Inter-Medium.woff2);
+}
+@font-face {
+  font-family: ital;
+  src: url(./Inter-Italic.woff2);
+}
+@font-face {
+  font-family: it;
+  src: url(./83d68701816a12aa35a2.otf);
+}
+@font-face {
+  font-family: its;
+  src: url(./454eb5dae254a8dce752.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: clamp(12px, 1vw, 18px);
+}
+
+.bg {
+  width: 100%;
+  height: 100vmin;
+  position: fixed;
+}
+.bg nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2vh 3vw;
+  position: absolute;
+}
+.bg nav button {
+  padding: 0.6em 1.5em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  background-color: #F5F5E7;
+  font-family: reg;
+  font-weight: 500;
+}
+.bg nav button:hover {
+  color: white;
+  background-color: black;
+}
+.bg .desktop {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bg .mobile {
+  display: none;
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
+main .page1 {
+  width: 100%;
+  height: 100vmin;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5vh 2.5vw;
+}
+main .page1 h1 {
+  font-size: 4.5em;
+  color: #fff;
+  font-family: reg;
+  font-weight: 100;
+}
+main .page2 {
+  width: 100%;
+  min-height: 70vh;
+  background-color: white;
+  padding: 5vh 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .page2 .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+main .page2 .center h3 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: reg;
+  opacity: 0.7;
+}
+main .page2 .center h1 {
+  font-size: 4em;
+  max-width: 80%;
+  font-family: reg;
+  opacity: 0.7;
+}
+main .page2 .center h1 span {
+  font-family: its;
+  opacity: 0.7;
+}
+main .page2 .center p {
+  font-size: 1.2em;
+  max-width: 60%;
+  font-family: med;
+  opacity: 0.7;
+}
+main .page3 {
+  width: 100%;
+  background-color: white;
+  padding: 2vh 3vw;
+}
+main .page3 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 1em;
+}
+main .page3 .text {
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: flex;
+  gap: 15em;
+}
+main .page3 .text h1 {
+  font-size: 2.8em;
+  font-family: reg;
+  opacity: 0.7;
+}
+main .page3 .text h1 span {
+  font-family: its;
+}
+main .page3 .text p {
+  font-size: 1em;
+  max-width: 30%;
+  font-family: reg;
+}
+main .page4 {
+  width: 100%;
+  padding: 10vh 3vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+}
+main .page4 .left {
+  width: 45%;
+}
+main .page4 .left .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .page4 .left .image i {
+  font-size: 2em;
+}
+main .page4 .left .image img {
+  width: 50em;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page4 .left .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-top: 1vw;
+}
+main .page4 .left .text h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  opacity: 0.7;
+  font-family: reg;
+}
+main .page4 .left .text .plans {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+main .page4 .left .text .plans h3 {
+  font-size: 2em;
+}
+main .page4 .left .text .plans p {
+  font-size: 1.2em;
+  font-family: med;
+}
+main .page4 .left .text .colors {
+  display: flex;
+  gap: 0.5em;
+}
+main .page4 .left .text .colors .color-1 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid red;
+}
+main .page4 .left .text .colors .color-2 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: rgb(193, 169, 169);
+}
+main .page4 .left .text .last-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+main .page4 .left .text .last-heading h3 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 0.5em;
+}
+main .page4 .left .text .last-heading h3 span {
+  opacity: 0.7;
+}
+main .page4 .left .text .last-heading p {
+  flex-basis: 50%;
+  font-family: reg;
+  font-weight: 100;
+  line-height: 1.4;
+}
+main .page4 .right {
+  width: 45%;
+}
+main .page4 .right .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .page4 .right .image i {
+  font-size: 2em;
+}
+main .page4 .right .image img {
+  width: 50em;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page4 .right .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-top: 1vw;
+}
+main .page4 .right .text h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  opacity: 0.7;
+  font-family: reg;
+}
+main .page4 .right .text .plans {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+main .page4 .right .text .plans h3 {
+  font-size: 2em;
+}
+main .page4 .right .text .plans p {
+  font-size: 1.2em;
+  font-family: med;
+}
+main .page4 .right .text .colors {
+  display: flex;
+  gap: 0.5em;
+}
+main .page4 .right .text .colors .color-1 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid red;
+}
+main .page4 .right .text .colors .color-2 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: rgb(193, 169, 169);
+}
+main .page4 .right .text .last-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+main .page4 .right .text .last-heading h3 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 0.5em;
+}
+main .page4 .right .text .last-heading h3 span {
+  opacity: 0.7;
+}
+main .page4 .right .text .last-heading p {
+  flex-basis: 50%;
+  font-family: reg;
+  line-height: 1.4;
+}
+main .page5 {
+  width: 100%;
+  background-color: white;
+  padding: 12vh 0;
+}
+main .page5 .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3em;
+}
+main .page5 .center h2 {
+  width: 40%;
+  font-size: 4.2em;
+  line-height: 1;
+  font-family: reg;
+  font-weight: 100;
+}
+main .page5 .center button {
+  font-size: 1.2em;
+  padding: 0.8em 2em;
+  color: white;
+  background-color: #FF3B36;
+  border: none;
+  border-radius: 0.2em;
+  font-weight: 400;
+  font-family: reg;
+}
+main .page6 {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+main .page6 h3 {
+  width: 50%;
+  font-size: 3.5em;
+  font-family: reg;
+  font-weight: 100;
+  line-height: 1;
+  position: absolute;
+  padding: 5vh 3vw;
+}
+main .page6 .image img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .page6 .btn {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  padding-bottom: 3vh;
+  display: flex;
+  gap: 1.5em;
+}
+main .page6 .btn button {
+  padding: 0.4em 1em;
+  font-size: 1em;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.534);
+  color: white;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-family: med;
+}
+main .page6 .btn button:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.249);
+}
+
+@media (max-width: 600px) {
+  .bg {
+    width: 100%;
+  }
+  .bg nav {
+    padding: 1vh 5vw;
+  }
+  .bg nav svg {
+    width: 110px;
+    height: 60px;
+  }
+  .bg nav button {
+    padding: 0.7em 1em;
+  }
+  .bg .desktop {
+    display: none;
+  }
+  .bg .mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  main {
+    width: 100%;
+    overflow: hidden;
+  }
+  main .page1 {
+    padding: 3vh 5vw;
+  }
+  main .page1 h1 {
+    font-size: 2.5em;
+    font-weight: 100;
+  }
+  main .page2 {
+    padding: 0vh 2vw;
+    min-height: 40vh;
+  }
+  main .page2 .center h3 {
+    font-size: 1em;
+  }
+  main .page2 .center h1 {
+    font-size: 2em;
+    max-width: 100%;
+  }
+  main .page2 .center p {
+    max-width: 100%;
+    line-height: 1.4;
+  }
+  main .page3 {
+    padding: 0 5vw;
+  }
+  main .page3 .image img {
+    border-radius: 0.5em;
+  }
+  main .page3 .text {
+    flex-direction: column;
+    gap: 2em;
+  }
+  main .page3 .text h1 {
+    font-size: 1.8em;
+  }
+  main .page3 .text p {
+    max-width: 100%;
+    font-size: 1.2em;
+  }
+  main .page4 {
+    width: 100%;
+    flex-direction: column;
+    gap: 1em;
+    padding: 8vh 5vw;
+  }
+  main .page4 .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0em;
+  }
+  main .page4 .left .image i {
+    display: none;
+  }
+  main .page4 .left .image img {
+    width: 35em;
+    height: 35vh;
+  }
+  main .page4 .left .text {
+    flex-direction: column;
+  }
+  main .page4 .left .text .plans h3 {
+    font-size: 1.8em;
+  }
+  main .page4 .left .text .last-heading {
+    gap: 1.5em;
+    flex-direction: column;
+  }
+  main .page4 .left .text .last-heading h3 {
+    gap: 0.5em;
+  }
+  main .page4 .left .text .last-heading p {
+    font-size: 1.2em;
+    opacity: 0.8;
+  }
+  main .page4 .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0em;
+  }
+  main .page4 .right .image img {
+    width: 35em;
+    height: 35vh;
+  }
+  main .page4 .right .text {
+    flex-direction: column;
+  }
+  main .page4 .right .text .plans h3 {
+    font-size: 1.8em;
+  }
+  main .page4 .right .text .last-heading {
+    gap: 1.5em;
+    flex-direction: column;
+  }
+  main .page4 .right .text .last-heading h3 {
+    gap: 0.5em;
+  }
+  main .page4 .right .text .last-heading p {
+    font-size: 1.2em;
+    opacity: 0.8;
+  }
+  main .page5 {
+    padding: 8vh 0;
+  }
+  main .page5 .center h2 {
+    width: 80%;
+    font-size: 2.2em;
+  }
+  main .page5 .center button {
+    padding: 0.8em 1.2em;
+  }
+  main .page6 {
+    padding: 8vh 0;
+    min-height: auto;
+    position: relative;
+    background-color: #fff;
+  }
+  main .page6 h3 {
+    width: 100%;
+    font-size: 1.5em;
+    top: -4%;
+    color: black;
+    font-family: reg;
+  }
+  main .page6 .image img {
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
